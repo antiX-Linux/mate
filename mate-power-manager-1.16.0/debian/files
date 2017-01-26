@@ -1,0 +1,4 @@
+mate-power-manager-common_1.16.0-2.0nosystemd1_all.deb x11 optional
+mate-power-manager-dbgsym_1.16.0-2.0nosystemd1_amd64.deb debug extra
+mate-power-manager_1.16.0-2.0nosystemd1_amd64.buildinfo x11 optional
+mate-power-manager_1.16.0-2.0nosystemd1_amd64.deb x11 optional

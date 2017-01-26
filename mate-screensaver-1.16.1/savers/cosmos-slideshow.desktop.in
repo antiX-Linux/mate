@@ -1,0 +1,11 @@
+[Desktop Entry]
+_Name=Cosmos
+_Comment=Display a slideshow of pictures of the cosmos
+Exec=/usr/lib/mate-screensaver/mate-screensaver/slideshow --location=/usr/share/backgrounds/cosmos
+TryExec=/usr/lib/mate-screensaver/mate-screensaver/slideshow
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=Screensaver;
+Keywords=MATE;screensaver;slideshow;cosmos;
+OnlyShowIn=MATE;

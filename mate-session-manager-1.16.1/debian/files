@@ -1,0 +1,4 @@
+debian-mate-default-settings_1.16.1-1.0nosystemd1_all.deb x11 optional
+mate-session-manager-dbgsym_1.16.1-1.0nosystemd1_amd64.deb debug extra
+mate-session-manager_1.16.1-1.0nosystemd1_amd64.buildinfo x11 optional
+mate-session-manager_1.16.1-1.0nosystemd1_amd64.deb x11 optional

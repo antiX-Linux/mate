@@ -1,0 +1,4 @@
+mate-screensaver-common_1.16.1-1.0nosystemd1_all.deb x11 optional
+mate-screensaver-dbgsym_1.16.1-1.0nosystemd1_amd64.deb debug extra
+mate-screensaver_1.16.1-1.0nosystemd1_amd64.buildinfo x11 optional
+mate-screensaver_1.16.1-1.0nosystemd1_amd64.deb x11 optional

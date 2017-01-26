@@ -1,0 +1,15 @@
+Package: mate-system-monitor-dbgsym
+Source: mate-system-monitor
+Version: 1.16.0-2.0nosystemd1
+Architecture: amd64
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 1273
+Depends: mate-system-monitor (= 1.16.0-2.0nosystemd1)
+Breaks: mate-system-monitor-dbg (<< 1.14.0-2~)
+Replaces: mate-system-monitor-dbg (<< 1.14.0-2~)
+Section: debug
+Priority: extra
+Homepage: http://www.mate-desktop.org/
+Description: Debug symbols for mate-system-monitor
+Auto-Built-Package: debug-symbols
+Build-Ids: a6d51c099a22cce3c23f2522f450ed0e82f6aae6

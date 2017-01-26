@@ -1,0 +1,245 @@
+mate-system-monitor (1.16.0-2.0nosystemd1) nosystemd; urgency=medium
+
+  * nosystemd 
+
+ -- anticapitalista <antix@operamail.com>  Wed, 25 Jan 2017 14:18:54 +0200
+
+mate-system-monitor (1.16.0-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/control:
+    + Drop unused B-D docbook-to-man.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 Jan 2017 19:56:33 +0100
+
+mate-system-monitor (1.16.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Vangelis Mouhtsis ]
+  * debian/changelog:
+    + Fix missing changelog items for 1.15.0-0ubuntu1 upload.
+  * debian/control:
+    + Dependencies updated for MATE 1.16.
+  * debian/watch:
+    + Update version matching again to _not_ support development releases.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 03 Oct 2016 20:50:01 +0200
+
+mate-system-monitor (1.15.0-0ubuntu1) yakkety; urgency=medium
+
+  * New upstream development release.
+  * debian/control:
+    + Dependencies updated for MATE 1.15.
+  * debian/watch:
+    + Update version matching to support development releases.
+
+ -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:47 +0100
+
+mate-system-monitor (1.14.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 22 Aug 2016 12:09:05 +0200
+
+mate-system-monitor (1.14.0-2) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/{control,rules}:
+    + dbgsym: Don't build dbg:packages anymore.
+      See https://wiki.debian.org/AutomaticDebugPackages.
+
+  [ James Clarke ]
+  * debian/rules:
+    + Build without systemd support on non-Linux kernels (Closes: #826183).
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Sat, 04 Jun 2016 15:19:12 +0200
+
+mate-system-monitor (1.14.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + B-D: libgtk-3-dev
+    + B-D: libgtkmm-3.0-dev
+    + B-D: libwnck-3-dev.
+    + Versioned B-D: mate-common (>= 1.14)
+  * debian/rules:
+    + MateConf dropped upstream.
+    + Add --with-gtk=3.0
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards: to 3.9.8. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 25 May 2016 16:40:54 +0200
+
+mate-system-monitor (1.12.2-1) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/copyright:
+    + Fix spelling error in License: field.
+  * debian/control:
+    + Versioned B-D on dpkg-dev (>= 1.16.1.1).
+    + Use encrypted URLs for Vcs-*: field.
+  * debian/rules:
+    + Enable all hardening flags.
+
+  [ Martin Wimpress ]
+  * New upstream bugfix release.
+  * debian/control:
+    + Bump Standards: to 3.9.7. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 31 Mar 2016 13:43:26 +0200
+
+mate-system-monitor (1.12.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Fix display of memory sizes in process tab. (Closes: #804661).
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/patches:
+    + Drop 1002_stdc++11.patch. Applied upstream.
+    + Drop 1001_search-for-libsystemd-dev.patch. Applied upstream.
+  * debian/watch:
+    + Drop +gfdl suffix.
+  * debian/control:
+    + Drop obsolete B-D: mate-icon-theme.
+    + Versioned B-D: mate-common (>= 1.12).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 02 Jan 2016 08:27:29 +0100
+
+mate-system-monitor (1.10.1+gfdl1-2) unstable; urgency=medium
+
+  * debian/control:
+    + Fix Breaks:/Replaces: (mate-system-monitor-common) relation between
+      mate-system-monitor and mate-system-monitor-common (m-s-m-common breaks
+      mate-system-monitor, but does not replace it). Also correct the Debian
+      version for Breaks: field.
+  * debian/patches:
+    + Add 1002_stdc++11.patch. Use -std=c++11 (instead of -std=c++98) in
+      CXXFLAGS.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 07 Oct 2015 10:03:29 +0200
+
+mate-system-monitor (1.10.1+gfdl1-1) unstable; urgency=medium
+
+  * debian/patches:
+    + Drop 2001_omit-gfdl-licensed-help-files.patch, mate-system-monitor help
+      is DFSG compliant.
+  * debian/control:
+    + Remove superfluous libdbus-glib-1-dev build dependency.
+    + Update Replaces and Breaks for mate-system-monitor-common.
+  * debian/mate-system-monitor-common.install:
+    + Add usr/share/{glib-2.0,help,man}.
+  * debian/rules:
+    + Remove +dfsg1 suffix.
+  * debian/watch:
+    + Remove +dfsg1 suffix.
+  * debian/copyright:
+    + Add copyright attribution for help authors and translators.
+
+  [ Mike Gabriel ]
+  * Re-upload to unstable. (Closes: #795066).
+    - Temporarily use a +gfdl1 suffix to make this upload's
+      upstream version greater than the previous +dfsg1 upload.
+      FIXME: drop the upstream version suffix completely with next upstream
+      release).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 22 Aug 2015 23:35:22 +0200
+
+mate-system-monitor (1.10.1+dfsg1-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 17 Jul 2015 15:48:29 +0200
+
+mate-system-monitor (1.10.0+dfsg1-1~exp1) experimental; urgency=low
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/mate-system-monitor-common.install:
+    + Add /usr/share/appdata/.
+  * debian/copyright:
+    + Update copyright file after new upstream release.
+  * debian/patches:
+    + Drop 1001_fix-name-section-in-man-page.patch. Applied upstream.
+  * debian/rules:
+    + Add --enable-systemd because systemd is disabled by default.
+    + Remove obsolete --disable-scrollkeeper.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Versioned B-D: mate-common (>= 1.10).
+    + Add B-D: libsystemd-dev.
+    + Add Martin Wimpress to Uploaders: field.
+  * debian/rules:
+    + Create orig tarball in ../ rather than in $(CURDIR).
+  * debian/copyright:
+    + Really mention all upstream files.
+    + More updates for new upstream release.
+  * debian/patches:
+    + Add 1001_search-for-libsystemd-dev.patch. Be satisfied if libsystemd-dev
+      is installed at build time.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Bump Standards: to 3.9.6. No changes needed.
+  * debian/rules:
+    + Remove non-packaged *.convert files after build.
+  * debian/rules:
+    + Replace on dh_install --list-missing -> --fail-missing.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 19 Jun 2015 14:37:05 +0200
+
+mate-system-monitor (1.8.0+dfsg1-2) unstable; urgency=low
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Enable parallel builds.
+    + Turn on compiler commands during package build (configure option:
+      --disable-silent-rules).
+    + Fix copy+paste error in tarball repacking code.
+  * debian/mate-system-monitor-common.install:
+    + Drop mate-conf .convert files from package.
+
+  [ Stefano Karapetsas ]
+  * debian/control:
+    + mate-system-monitor depends on mate-system-monitor-common.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 05 May 2014 10:35:29 +0200
+
+mate-system-monitor (1.8.0+dfsg1-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/patches:
+    + Provide README explaining the patch numbering scheme.
+  * debian/watch:
+    + Use tagged CGit tarball snapshots as upstream source.
+  * debian/patches:
+    + Drop patch 1001_add-keywords-to-desktop-file.patch. Fixed upstream.
+    + Refresh patch 2001_omit-gfdl-licensed-help-files.patch.
+    + Add patch 1001_fix-name-section-in-man-page.patch. Fix whatis
+      entry in NAME section of mate-system-monitor.1 man page.
+  * debian/copyright:
+    + Adapt to files in new (repacked) upstream tarball.
+  * debian/rules:
+    + Build package using autogen.sh.
+  * debian/control:
+    + Drop B-D: libmate-wnck-dev.
+    + Add B-D: libwnck-dev.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Mar 2014 17:38:50 +0100
+
+mate-system-monitor (1.6.1+dfsg1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #734871).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 18 Feb 2014 10:43:50 +0100

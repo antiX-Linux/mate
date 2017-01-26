@@ -1,0 +1,15 @@
+Package: mate-screensaver-dbgsym
+Source: mate-screensaver
+Version: 1.16.1-1.0nosystemd1
+Architecture: amd64
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 647
+Depends: mate-screensaver (= 1.16.1-1.0nosystemd1)
+Breaks: mate-screensaver-dbg (<< 1.14.1-2~)
+Replaces: mate-screensaver-dbg (<< 1.14.1-2~)
+Section: debug
+Priority: extra
+Homepage: http://www.mate-desktop.org/
+Description: Debug symbols for mate-screensaver
+Auto-Built-Package: debug-symbols
+Build-Ids: 28b13f0781f0831158238a0d63ceac61b3e121a0 2e35b0fe566a66781a015b69198ea0c5c22a5fdc 78c4f259ceacdece6a0468f64185f17ea392da05 9d97ac0c1e3ff5b27ea104f1c89847bece23d1fd b6407ecef79c756983ae4d473b29c33d35f2e1a3 c1a1cbcfb6c4ec8a4c724e54f90063c20eb60e2e e46c8b4b4570057bb98a14e6c49f0a8b4bc131ac f104bc5cd317688c019a2a764fd3dde22fad9b0f

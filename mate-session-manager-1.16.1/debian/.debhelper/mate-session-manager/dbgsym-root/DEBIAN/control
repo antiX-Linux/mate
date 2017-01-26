@@ -1,0 +1,15 @@
+Package: mate-session-manager-dbgsym
+Source: mate-session-manager
+Version: 1.16.1-1.0nosystemd1
+Architecture: amd64
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 506
+Depends: mate-session-manager (= 1.16.1-1.0nosystemd1)
+Breaks: mate-session-manager-dbg (<< 1.14.0-2~)
+Replaces: mate-session-manager-dbg (<< 1.14.0-2~)
+Section: debug
+Priority: extra
+Homepage: http://www.mate-desktop.org/
+Description: Debug symbols for mate-session-manager
+Auto-Built-Package: debug-symbols
+Build-Ids: 78ca970e94c0dfd6fdadfd32aa503b111f2344c2 7948ea21fd2d397825cbdb0fbd3196718517520e ab8d23d1be74a68ed43ed8f39fc7462f8abdeb88 ef3025597e22d006c2ebce23d79ed42bfe1278ec

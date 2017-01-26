@@ -1,0 +1,15 @@
+21bdb1ed5bf74b76314b6f05b4d3df88  usr/bin/mate-power-manager
+c89b82b80d4a4c7b5bd0eb2c430a57d7  usr/bin/mate-power-preferences
+0a11b8f9955cdd690f088a758b62dbc6  usr/bin/mate-power-statistics
+7cfa3b24ff3b4e5d39eb6f10121cdbb6  usr/lib/mate-power-manager/mate-brightness-applet
+6f330211e389c5a347806c625f446b3a  usr/lib/mate-power-manager/mate-inhibit-applet
+1f0e6139fef47817007cad6b430c0b20  usr/sbin/mate-power-backlight-helper
+1fe65885c21c256dcdfad7ccef987ff8  usr/share/applications/mate-power-preferences.desktop
+90f98a360873ed6fa11ca57267d40cb1  usr/share/applications/mate-power-statistics.desktop
+071fedbbf90dbcd274071f554dec58b7  usr/share/dbus-1/services/org.mate.PowerManager.service
+ab8800c51c9c62dfb93f223aa399ca45  usr/share/dbus-1/services/org.mate.panel.applet.BrightnessAppletFactory.service
+60b7184360110d49719f6129ea050f00  usr/share/dbus-1/services/org.mate.panel.applet.InhibitAppletFactory.service
+8632df4efa3b8f5edf18432c487277fc  usr/share/doc/mate-power-manager/changelog.Debian.gz
+77b3c83f31344988f97f36e8ef59f8db  usr/share/doc/mate-power-manager/changelog.gz
+4f92facf422fe00646e7a5f07026ed80  usr/share/doc/mate-power-manager/copyright
+c90fab9bbc8f0df6d7b53a06912fea17  usr/share/polkit-1/actions/org.mate.power.policy
